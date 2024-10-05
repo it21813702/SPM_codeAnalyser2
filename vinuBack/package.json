@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "acorn": "^8.12.1",
     "cors": "^2.8.5",
+    "esprima": "^4.0.1",
     "express": "^4.21.0"
   }
 }

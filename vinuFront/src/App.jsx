@@ -1,13 +1,15 @@
-// src/App.jsx
 import React from 'react';
 import CodeAnalyzer from './components/CodeAnalyzer';
 
 const App = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-50">
-      <div className="w-full max-w-4xl p-8 bg-white rounded-xl shadow-md">
-        <h1 className="text-2xl font-bold text-center mb-8">JavaScript Code Analyzer</h1>
-        <CodeAnalyzer />
+    <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+      <div className="relative py-3 sm:max-w-xl sm:mx-auto">
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-light-blue-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+        <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+          <h1 className="text-2xl font-semibold mb-5 text-center">JavaScript Code Analyzer</h1>
+          <CodeAnalyzer />
+        </div>
       </div>
     </div>
   );
