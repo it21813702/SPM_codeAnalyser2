@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 const OptimizedCode = ({ optimizedCode, onClose }) => (
   <div className="w-1/2">
     <textarea

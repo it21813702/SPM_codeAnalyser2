@@ -9,6 +9,8 @@ const PORT = 3001;
 app.use(cors());
 app.use(express.json());
 
+
+//metics calculation function
 const analyzeCode = (code) => {
     try {
         const ast = esprima.parseScript(code, { tolerant: true, comment: true });
@@ -60,6 +62,7 @@ const analyzeCode = (code) => {
             success: true,
             metrics,
         };
+
     } catch (error) {
         console.error("Error analyzing code:", error);
         return {
@@ -70,6 +73,7 @@ const analyzeCode = (code) => {
     }
 };
 
+//endpoint for calculation
 app.post('/analyze', (req, res) => {
     const { code } = req.body;
 
@@ -88,6 +92,7 @@ app.post('/analyze', (req, res) => {
         metrics: analysisResult.metrics,
     });
 });
+
 
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);

@@ -29,6 +29,8 @@ const CodeAnalyzer = () => {
   return (
     <div className="space-y-6">
       <div className="flex space-x-4">
+        
+        {/*code input area*/}
         <CodeInput
           code={code}
           setCode={setCode}
@@ -37,6 +39,8 @@ const CodeAnalyzer = () => {
           optimizedCode={optimizedCode}
           toggleOptimizedCode={toggleOptimizedCode}
         />
+
+        {/*optimised code display area*/}
         {showOptimizedCode && (
           <OptimizedCode
             optimizedCode={optimizedCode}
@@ -44,6 +48,7 @@ const CodeAnalyzer = () => {
           />
         )}
       </div>
+      
       {error && <p className="text-red-500">{error}</p>}
       {metrics && <MetricsChart metrics={metrics} />}
     </div>

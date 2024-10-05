@@ -4,6 +4,7 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Toolti
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
+//metrics dispaly component
 const MetricsChart = ({ metrics }) => {
   const chartData = {
     labels: Object.keys(metrics),
