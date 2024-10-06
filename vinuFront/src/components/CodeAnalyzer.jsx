@@ -1,3 +1,4 @@
+// frontend/src/components/CodeAnalyzer.jsx
 import React, { useState } from 'react';
 import CodeInput from './CodeInput';
 import OptimizedCode from './OptimizedCode';

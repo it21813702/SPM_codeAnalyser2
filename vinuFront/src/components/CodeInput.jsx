@@ -1,3 +1,4 @@
+// frontend/src/components/CodeInput.jsx
 import React from 'react';
 
 const CodeInput = ({ code, setCode, onAnalyze, showOptimizedCode, optimizedCode, toggleOptimizedCode, language }) => (
